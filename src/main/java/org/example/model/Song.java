@@ -14,5 +14,16 @@ public enum Song {
     NONE_OF_MY_BUSINESS,
     BRATTY,
     PSYCHIC_LOVER,
-    KILL_SHOT
+    KILL_SHOT,
+
+    BORN_TO_BE,
+    UNTOUCHABLE,
+    MR_VAMPIRE,
+    DYNAMITE,
+    CROWN_ON_MY_HEAD,
+    BLOSSOM,
+    RUN_AWAY,
+    MINE,
+    YET_BUT,
+    ESCALATOR
 }
