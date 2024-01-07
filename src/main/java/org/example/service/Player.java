@@ -43,16 +43,7 @@ public class Player {
         System.arraycopy(songs, 15, four, 0, 5);
     }
 
-    public static void main(String[] args) {
-        Player t = new Player();
-//        t.getMelon();
-        t.getVibe();
-//        t.getGenie();
-//        t.getBugs();
-    }
-
-
-    public void getMelon() {
+    public void playMelon() {
         StreamSite melon = new Melon();
         String andOne = melon.getAndroidSeg(one);
         String andTwo = melon.getAndroidSeg(two);
@@ -84,7 +75,7 @@ public class Player {
 
     }
 
-    public void getGenie() {
+    public void playGenie() {
         StreamSite genie = new Genie();
         String and = genie.getUrl(Genie.ANDROID, songs);
         String ios = genie.getUrl(Genie.IOS, songs);
@@ -97,7 +88,7 @@ public class Player {
         System.out.println("pc = " + pc);
     }
 
-    private void getBugs() {
+    public void playBugs() {
         StreamSite bugs = new Bugs();
         String andIos = bugs.getUrl(Bugs.MOBILE, songs);
         String pc = bugs.getUrl(Bugs.PC, songs);
@@ -106,7 +97,7 @@ public class Player {
         System.out.println("pc = " + pc);
     }
 
-    private void getVibe() {
+    public void playVibe() {
         StreamSite vibe = new Vibe();
         String vibeOne = vibe.getUrl(Vibe.ANDROID, one);
         String vibeTwo = vibe.getUrl(Vibe.ANDROID, two);
