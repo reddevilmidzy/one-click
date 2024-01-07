@@ -42,6 +42,7 @@ public class Genie implements StreamSite {
         return environment + join(";", songs);
     }
 
+    @Override
     public String join(String delimiter, Song[] songs) {
         StringBuilder res = new StringBuilder(songMap.get(songs[0]));
         for (int i = 1; i < songs.length; i++) {
