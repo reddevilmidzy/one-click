@@ -1,17 +1,41 @@
 package org.example.site;
 
-import org.example.model.Song;
-import org.example.model.StreamSite;
+import static org.example.model.Song.BLOSSOM;
+import static org.example.model.Song.BORN_TO_BE;
+import static org.example.model.Song.CROWN_ON_MY_HEAD;
+import static org.example.model.Song.DYNAMITE;
+import static org.example.model.Song.ESCALATOR;
+import static org.example.model.Song.MINE;
+import static org.example.model.Song.MR_VAMPIRE;
+import static org.example.model.Song.RUN_AWAY;
+import static org.example.model.Song.UNTOUCHABLE;
+import static org.example.model.Song.YET_BUT;
 
 import java.util.HashMap;
 import java.util.Map;
+import org.example.model.Song;
+import org.example.model.StreamSite;
 
 public class Genie implements StreamSite {
-    private final Map<Song, String> songMap;
 
     public static final String ANDROID = "cromegenie://scan/?landing_type=31&landing_target=";
     public static final String IOS = "ktolleh00167://landing/?landing_type=31&landing_target=";
     public static final String PC = "https://www.genie.co.kr/player/shareProcessV2?xgnm=";
+    private static final Map<Song, String> songMap;
+
+    static {
+        songMap = new HashMap<>();
+        songMap.put(UNTOUCHABLE, "");
+        songMap.put(BORN_TO_BE, "");
+        songMap.put(MR_VAMPIRE, "");
+        songMap.put(DYNAMITE, "");
+        songMap.put(CROWN_ON_MY_HEAD, "");
+        songMap.put(BLOSSOM, "");
+        songMap.put(RUN_AWAY, "");
+        songMap.put(MINE, "");
+        songMap.put(YET_BUT, "");
+        songMap.put(ESCALATOR, "");
+    }
 
     @Override
     public String getUrl(String environment, Song[] songs) {
@@ -24,18 +48,5 @@ public class Genie implements StreamSite {
             res.append(delimiter).append(songMap.get(songs[i]));
         }
         return String.valueOf(res);
-    }
-
-    public Genie() {
-        songMap = new HashMap<>(Map.of(Song.BET_ON_ME, "102507879", Song.CAKE, "102507880", Song.NONE_OF_MY_BUSINESS, "102507881",
-                Song.BRATTY, "102507882", Song.PSYCHIC_LOVER, "102507883", Song.KILL_SHOT, "102507884"));
-        songMap.put(Song.DALLA_DALLA, "88607738");
-        songMap.put(Song.ICY, "89258787");
-        songMap.put(Song.WANNABE, "89952547");
-        songMap.put(Song.NOT_SHY, "80679336");
-        songMap.put(Song.MAFIA_IN_THE_MORNING, "93154014");
-        songMap.put(Song.LOCO, "94395661");
-        songMap.put(Song.SNEAKERS, "97480729");
-        songMap.put(Song.CHESHIRE, "99236070");
     }
 }

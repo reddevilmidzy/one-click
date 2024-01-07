@@ -1,15 +1,38 @@
 package org.example.site;
 
-import org.example.model.Song;
-import org.example.model.StreamSite;
+import static org.example.model.Song.BLOSSOM;
+import static org.example.model.Song.BORN_TO_BE;
+import static org.example.model.Song.CROWN_ON_MY_HEAD;
+import static org.example.model.Song.DYNAMITE;
+import static org.example.model.Song.ESCALATOR;
+import static org.example.model.Song.MINE;
+import static org.example.model.Song.MR_VAMPIRE;
+import static org.example.model.Song.RUN_AWAY;
+import static org.example.model.Song.UNTOUCHABLE;
+import static org.example.model.Song.YET_BUT;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import static org.example.model.Song.*;
+import org.example.model.Song;
+import org.example.model.StreamSite;
 
 public class Melon implements StreamSite {
-    private final Map<Song, String> songMap;
+
+    private static final Map<Song, String> songMap;
+
+    static {
+        songMap = new HashMap<>();
+        songMap.put(UNTOUCHABLE, "");
+        songMap.put(BORN_TO_BE, "");
+        songMap.put(MR_VAMPIRE, "");
+        songMap.put(DYNAMITE, "");
+        songMap.put(CROWN_ON_MY_HEAD, "");
+        songMap.put(BLOSSOM, "");
+        songMap.put(RUN_AWAY, "");
+        songMap.put(MINE, "");
+        songMap.put(YET_BUT, "");
+        songMap.put(ESCALATOR, "");
+    }
 
     public String join(String delimiter, Song[] songs) {
         StringBuilder res = new StringBuilder(songMap.get(songs[0]));
@@ -29,18 +52,5 @@ public class Melon implements StreamSite {
 
     public String getIos(Song[] songs) {
         return "meloniphone://play/?ctype=1&menuid=0&cid=" + join(",", songs);
-    }
-
-    public Melon() {
-        songMap = new HashMap<>(Map.of(BET_ON_ME, "36582680", CAKE, "36582681", NONE_OF_MY_BUSINESS, "36582682",
-                BRATTY, "36582683", PSYCHIC_LOVER, "36582684", KILL_SHOT, "36582685"));
-        songMap.put(DALLA_DALLA, "31606729");
-        songMap.put(ICY, "31955739");
-        songMap.put(WANNABE, "32445339");
-        songMap.put(NOT_SHY, "32860419");
-        songMap.put(MAFIA_IN_THE_MORNING, "33447280");
-        songMap.put(LOCO, "33999025");
-        songMap.put(SNEAKERS, "35413033");
-        songMap.put(CHESHIRE, "35875407");
     }
 }
