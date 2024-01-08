@@ -29,18 +29,18 @@ public class Player {
     static {
         songs = new Song[]{UNTOUCHABLE, BORN_TO_BE, MR_VAMPIRE, DYNAMITE, CROWN_ON_MY_HEAD,
                 UNTOUCHABLE, BLOSSOM, RUN_AWAY, MINE, YET_BUT,
-                UNTOUCHABLE, ESCALATOR, BORN_TO_BE, MR_VAMPIRE, DYNAMITE,
-                UNTOUCHABLE, CROWN_ON_MY_HEAD, BLOSSOM, RUN_AWAY, MINE, YET_BUT};
+                UNTOUCHABLE, ESCALATOR, BORN_TO_BE, CROWN_ON_MY_HEAD,
+                UNTOUCHABLE, BLOSSOM, RUN_AWAY, MINE, YET_BUT};
 
         one = new Song[5];
         two = new Song[5];
-        three = new Song[5];
-        four = new Song[6];
+        three = new Song[4];
+        four = new Song[5];
 
         System.arraycopy(songs, 0, one, 0, 5);
         System.arraycopy(songs, 5, two, 0, 5);
-        System.arraycopy(songs, 10, three, 0, 5);
-        System.arraycopy(songs, 15, four, 0, 6);
+        System.arraycopy(songs, 10, three, 0, 4);
+        System.arraycopy(songs, 14, four, 0, 5);
     }
 
     public void playMelon() {
@@ -104,7 +104,6 @@ public class Player {
         String vibeTwo = vibe.getUrl(Vibe.ANDROID, two);
         String vibeThree = vibe.getUrl(Vibe.ANDROID, three);
         String vibeFour = vibe.getUrl(Vibe.ANDROID, four);
-
 
         System.out.println("<p><a href=\"" + vibeOne + "\">1</a></p>");
         System.out.println("<p><a href=\"" + vibeTwo + "\">2</a></p>");
