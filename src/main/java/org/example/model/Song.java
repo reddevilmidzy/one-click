@@ -25,5 +25,5 @@ public enum Song {
     RUN_AWAY,
     MINE,
     YET_BUT,
-    ESCALATOR
+    ESCALATOR;
 }

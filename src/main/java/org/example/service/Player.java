@@ -20,27 +20,27 @@ import org.example.site.Vibe;
 
 public class Player {
 
-    private static final Song[] songs;
-    private static final Song[] one;
-    private static final Song[] two;
-    private static final Song[] three;
-    private static final Song[] four;
+    public static final Song[] songs;
+    public static final Song[] one;
+    public static final Song[] two;
+    public static final Song[] three;
+    public static final Song[] four;
 
     static {
         songs = new Song[]{UNTOUCHABLE, BORN_TO_BE, MR_VAMPIRE, DYNAMITE, CROWN_ON_MY_HEAD,
                 UNTOUCHABLE, BLOSSOM, RUN_AWAY, MINE, YET_BUT,
                 UNTOUCHABLE, ESCALATOR, BORN_TO_BE, MR_VAMPIRE, DYNAMITE,
-                UNTOUCHABLE, CROWN_ON_MY_HEAD, BLOSSOM, RUN_AWAY, MINE};
+                UNTOUCHABLE, CROWN_ON_MY_HEAD, BLOSSOM, RUN_AWAY, MINE, YET_BUT};
 
         one = new Song[5];
         two = new Song[5];
         three = new Song[5];
-        four = new Song[5];
+        four = new Song[6];
 
         System.arraycopy(songs, 0, one, 0, 5);
         System.arraycopy(songs, 5, two, 0, 5);
         System.arraycopy(songs, 10, three, 0, 5);
-        System.arraycopy(songs, 15, four, 0, 5);
+        System.arraycopy(songs, 15, four, 0, 6);
     }
 
     public void playMelon() {
