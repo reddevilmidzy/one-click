@@ -22,16 +22,16 @@ public class Vibe implements StreamSite {
 
     static {
         songMap = new HashMap<>();
-        songMap.put(UNTOUCHABLE, "");
-        songMap.put(BORN_TO_BE, "");
-        songMap.put(MR_VAMPIRE, "");
-        songMap.put(DYNAMITE, "");
-        songMap.put(CROWN_ON_MY_HEAD, "");
-        songMap.put(BLOSSOM, "");
-        songMap.put(RUN_AWAY, "");
-        songMap.put(MINE, "");
-        songMap.put(YET_BUT, "");
-        songMap.put(ESCALATOR, "");
+        songMap.put(UNTOUCHABLE, "81984905");
+        songMap.put(BORN_TO_BE, "81984904");
+        songMap.put(MR_VAMPIRE, "81984906");
+        songMap.put(DYNAMITE, "81984907");
+        songMap.put(CROWN_ON_MY_HEAD, "81984908");
+        songMap.put(BLOSSOM, "81984909");
+        songMap.put(RUN_AWAY, "81984910");
+        songMap.put(MINE, "81984911");
+        songMap.put(YET_BUT, "81984912");
+        songMap.put(ESCALATOR, "81984913");
     }
 
     @Override

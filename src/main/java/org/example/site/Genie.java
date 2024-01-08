@@ -25,16 +25,16 @@ public class Genie implements StreamSite {
 
     static {
         songMap = new HashMap<>();
-        songMap.put(UNTOUCHABLE, "");
-        songMap.put(BORN_TO_BE, "");
-        songMap.put(MR_VAMPIRE, "");
-        songMap.put(DYNAMITE, "");
-        songMap.put(CROWN_ON_MY_HEAD, "");
-        songMap.put(BLOSSOM, "");
-        songMap.put(RUN_AWAY, "");
-        songMap.put(MINE, "");
-        songMap.put(YET_BUT, "");
-        songMap.put(ESCALATOR, "");
+        songMap.put(UNTOUCHABLE, "104916260");
+        songMap.put(BORN_TO_BE, "104916259");
+        songMap.put(MR_VAMPIRE, "104916261");
+        songMap.put(DYNAMITE, "104916262");
+        songMap.put(CROWN_ON_MY_HEAD, "104916263");
+        songMap.put(BLOSSOM, "104916264");
+        songMap.put(RUN_AWAY, "104916265");
+        songMap.put(MINE, "104916266");
+        songMap.put(YET_BUT, "104916267");
+        songMap.put(ESCALATOR, "104916268");
     }
 
     @Override

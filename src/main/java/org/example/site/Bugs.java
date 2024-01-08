@@ -24,16 +24,16 @@ public class Bugs implements StreamSite {
 
     static {
         songMap = new HashMap<>();
-        songMap.put(UNTOUCHABLE, "");
-        songMap.put(BORN_TO_BE, "");
-        songMap.put(MR_VAMPIRE, "");
-        songMap.put(DYNAMITE, "");
-        songMap.put(CROWN_ON_MY_HEAD, "");
-        songMap.put(BLOSSOM, "");
-        songMap.put(RUN_AWAY, "");
-        songMap.put(MINE, "");
-        songMap.put(YET_BUT, "");
-        songMap.put(ESCALATOR, "");
+        songMap.put(UNTOUCHABLE, "6228690");
+        songMap.put(BORN_TO_BE, "6226428");
+        songMap.put(MR_VAMPIRE, "6227821");
+        songMap.put(DYNAMITE, "6228691");
+        songMap.put(CROWN_ON_MY_HEAD, "6226906");
+        songMap.put(BLOSSOM, "6228692");
+        songMap.put(RUN_AWAY, "6227170");
+        songMap.put(MINE, "6227232");
+        songMap.put(YET_BUT, "6227513");
+        songMap.put(ESCALATOR, "6228693");
     }
 
 

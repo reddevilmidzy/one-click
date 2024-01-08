@@ -22,16 +22,16 @@ public class Melon implements StreamSite {
 
     static {
         songMap = new HashMap<>();
-        songMap.put(UNTOUCHABLE, "");
-        songMap.put(BORN_TO_BE, "");
-        songMap.put(MR_VAMPIRE, "");
-        songMap.put(DYNAMITE, "");
-        songMap.put(CROWN_ON_MY_HEAD, "");
-        songMap.put(BLOSSOM, "");
-        songMap.put(RUN_AWAY, "");
-        songMap.put(MINE, "");
-        songMap.put(YET_BUT, "");
-        songMap.put(ESCALATOR, "");
+        songMap.put(UNTOUCHABLE, "37066916");
+        songMap.put(BORN_TO_BE, "37066915");
+        songMap.put(MR_VAMPIRE, "37066917");
+        songMap.put(DYNAMITE, "37066918");
+        songMap.put(CROWN_ON_MY_HEAD, "37066919");
+        songMap.put(BLOSSOM, "37066920");
+        songMap.put(RUN_AWAY, "37066921");
+        songMap.put(MINE, "37066922");
+        songMap.put(YET_BUT, "37066923");
+        songMap.put(ESCALATOR, "37066924");
     }
 
     public String join(String delimiter, Song[] songs) {

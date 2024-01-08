@@ -57,19 +57,20 @@ public class Player {
 
         String iosAll = melon.getIos(songs);
 
-        System.out.println("andOne = " + andOne);
-        System.out.println("two = " + andTwo);
-        System.out.println("andThree = " + andThree);
-        System.out.println("four = " + andFour);
+        System.out.println("<p><a href=\"" + andOne + "\">1</a></p>");
+        System.out.println("<p><a href=\"" + andTwo + "\">2</a></p>");
+        System.out.println("<p><a href=\"" + andThree + "\">3</a></p>");
+        System.out.println("<p><a href=\"" + andFour + "\">4</a></p>");
 
+        System.out.println("=================");
         System.out.println("=================");
         System.out.println("iosAll = " + iosAll);
 
         System.out.println("=================");
-        System.out.println("pcOne = " + pcOne);
-        System.out.println("pcTwo = " + pcTwo);
-        System.out.println("pcThree = " + pcThree);
-        System.out.println("pcFour = " + pcFour);
+        System.out.println("<p><a href=\"" + pcOne + "\">1</a></p>");
+        System.out.println("<p><a href=\"" + pcTwo + "\">2</a></p>");
+        System.out.println("<p><a href=\"" + pcThree + "\">3</a></p>");
+        System.out.println("<p><a href=\"" + pcFour + "\">4</a></p>");
 
         System.out.println("=================");
 
@@ -104,13 +105,11 @@ public class Player {
         String vibeThree = vibe.getUrl(Vibe.ANDROID, three);
         String vibeFour = vibe.getUrl(Vibe.ANDROID, four);
 
-        System.out.println(vibeOne);
-        System.out.println("====");
-        System.out.println(vibeTwo);
-        System.out.println("====");
-        System.out.println(vibeThree);
-        System.out.println("====");
-        System.out.println(vibeFour);
-        System.out.println("====");
+
+        System.out.println("<p><a href=\"" + vibeOne + "\">1</a></p>");
+        System.out.println("<p><a href=\"" + vibeTwo + "\">2</a></p>");
+        System.out.println("<p><a href=\"" + vibeThree + "\">3</a></p>");
+        System.out.println("<p><a href=\"" + vibeFour + "\">4</a></p>");
+
     }
 }
